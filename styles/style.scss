@@ -8,4 +8,8 @@ body {
     font-family: "Red Hat Display", sans-serif;
     background: $paleBlue;
     padding: 50px 0 20px;
+
+    @media screen and (min-width: $desktop) {
+        background: url(../img/pattern-background-desktop.svg) 0 -75px / 100% auto no-repeat, $paleBlue;
+    }
 }

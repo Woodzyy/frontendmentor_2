@@ -10,7 +10,9 @@
 }
 
 a,
-a:active {
+a:active,
+a:hover,
+a:focus {
   text-decoration: none;
   transition: 0.3s;
 }
@@ -63,7 +65,7 @@ section {
   width: 100%;
   margin: 0 auto 20px;
   padding: 0;
-  background-color: #f5f7ff;
+  background-color: white;
   border-radius: 0 0 20px 20px;
 }
 .wrapper .content .text {
@@ -124,13 +126,15 @@ section {
   color: #3829e0;
   text-decoration: underline;
 }
-.wrapper .content .plan .change .change-link:hover {
-  color: rgb(161, 125, 232);
+.wrapper .content .plan .change .change-link:active {
+  color: rgb(99, 67, 162);
   text-decoration: none;
 }
-.wrapper .content .plan .change .change-link:active {
-  color: rgb(161, 125, 232);
-  text-decoration: none;
+@media screen and (min-width: 450px) {
+  .wrapper .content .plan .change .change-link:hover {
+    color: rgb(161, 125, 232);
+    text-decoration: none;
+  }
 }
 .wrapper .content .payment {
   width: 100%;
@@ -156,13 +160,13 @@ section {
   color: #f5f7ff;
   border-radius: 10px;
 }
-.wrapper .content .payment .btn--primary:hover {
-  background-color: rgb(161, 125, 232);
-  text-decoration: none;
-}
 .wrapper .content .payment .btn--primary:active {
-  background-color: rgb(161, 125, 232);
-  text-decoration: none;
+  background-color: rgb(99, 67, 162);
+}
+@media screen and (min-width: 450px) {
+  .wrapper .content .payment .btn--primary:hover {
+    background-color: rgb(161, 125, 232);
+  }
 }
 .wrapper .content .payment .btn--additional {
   display: block;
@@ -173,13 +177,14 @@ section {
   font-weight: 700;
   line-height: 1;
   color: #7280a7;
-  text-decoration: none;
-}
-.wrapper .content .payment .btn--additional:hover {
-  color: #1f2f56;
 }
 .wrapper .content .payment .btn--additional:active {
   color: #1f2f56;
+}
+@media screen and (min-width: 450px) {
+  .wrapper .content .payment .btn--additional:hover {
+    color: #1f2f56;
+  }
 }
 
 .attribution {
@@ -195,4 +200,9 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background: #e0e8ff;
   padding: 50px 0 20px;
+}
+@media screen and (min-width: 450px) {
+  body {
+    background: url(../img/pattern-background-desktop.svg) 0 -75px/100% auto no-repeat, #e0e8ff;
+  }
 }

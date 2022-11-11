@@ -13,7 +13,7 @@
 
     .content {
         @include setWrapper(100%, 0 auto 20px, 0);
-        background-color: $veryPaleBlue;
+        background-color: white;
         border-radius: 0 0 20px 20px;
 
         .text {
@@ -57,14 +57,16 @@
                     color: $blue;
                     text-decoration: underline;
 
-                    &:hover {
-                        color: rgb(161, 125, 232);
+                    &:active {
+                        color: rgb(99, 67, 162);
                         text-decoration: none;
                     }
 
-                    &:active {
-                        color: rgb(161, 125, 232);
-                        text-decoration: none;
+                    @media screen and (min-width: $desktop) {
+                        &:hover {
+                            color: rgb(161, 125, 232);
+                            text-decoration: none;
+                        }
                     }
                 }
             }
@@ -84,14 +86,14 @@
                 color: $veryPaleBlue;
                 border-radius: 10px;
 
-                &:hover {
-                    background-color: rgb(161, 125, 232);
-                    text-decoration: none;
+                &:active {
+                    background-color: rgb(99, 67, 162);
                 }
 
-                &:active {
-                    background-color: rgb(161, 125, 232);
-                    text-decoration: none;
+                @media screen and (min-width: $desktop) {
+                    &:hover {
+                        background-color: rgb(161, 125, 232);
+                    }
                 }
             }
 
@@ -100,14 +102,15 @@
                 @include setWrapper(auto, 0 auto, 8px);
                 @include setFont(1rem, 700, 1);
                 color: $desaturatedBlue;
-                text-decoration: none;
-
-                &:hover {
-                    color: $darkBlue;
-                }
 
                 &:active {
                     color: $darkBlue;
+                }
+
+                @media screen and (min-width: $desktop) {
+                    &:hover {
+                        color: $darkBlue;
+                    }
                 }
             }
         }
