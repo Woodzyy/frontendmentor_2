@@ -1,0 +1,11 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import "variables";
+@import "mixin";
+@import "main";
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background: $paleBlue;
+    padding: 50px 0 20px;
+}

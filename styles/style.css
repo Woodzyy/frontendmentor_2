@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-size: 100%;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+.wrapper {
+  width: 87%;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 20px;
+}
+@media screen and (min-width: 450px) {
+  .wrapper {
+    width: 29%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.wrapper .img img {
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.wrapper .content {
+  width: 100%;
+  margin: 0 auto 20px;
+  padding: 0;
+  background-color: #f5f7ff;
+  border-radius: 0 0 20px 20px;
+}
+.wrapper .content .text {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 40px;
+  text-align: center;
+}
+.wrapper .content .text .title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #1f2f56;
+}
+.wrapper .content .text .subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #7280a7;
+}
+.wrapper .content .plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+.wrapper .content .plan .annual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 6px;
+}
+.wrapper .content .plan .annual h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #1f2f56;
+}
+.wrapper .content .plan .annual p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #7280a7;
+}
+.wrapper .content .plan .change {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.wrapper .content .plan .change .change-link {
+  color: #3829e0;
+  text-decoration: underline;
+}
+.wrapper .content .plan .change .change-link:hover {
+  color: rgb(161, 125, 232);
+  text-decoration: none;
+}
+.wrapper .content .plan .change .change-link:active {
+  color: rgb(161, 125, 232);
+  text-decoration: none;
+}
+.wrapper .content .payment {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 20px;
+  text-align: center;
+}
+.wrapper .content .payment .btn--primary {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #3829e0;
+  color: #f5f7ff;
+  border-radius: 10px;
+}
+.wrapper .content .payment .btn--primary:hover {
+  background-color: rgb(161, 125, 232);
+  text-decoration: none;
+}
+.wrapper .content .payment .btn--primary:active {
+  background-color: rgb(161, 125, 232);
+  text-decoration: none;
+}
+.wrapper .content .payment .btn--additional {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #7280a7;
+  text-decoration: none;
+}
+.wrapper .content .payment .btn--additional:hover {
+  color: #1f2f56;
+}
+.wrapper .content .payment .btn--additional:active {
+  color: #1f2f56;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 5px 20px;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: #e0e8ff;
+  padding: 50px 0 20px;
+}

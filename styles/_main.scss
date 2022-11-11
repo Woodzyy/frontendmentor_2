@@ -1,0 +1,125 @@
+.wrapper {
+    @include setWrapper(87%, 0 auto, 0);
+    border-radius: 20px;
+
+    @media screen and (min-width: $desktop) {
+        @include setWrapper(29%, 0 auto, 0);
+    }
+
+    .img img {
+        max-width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .content {
+        @include setWrapper(100%, 0 auto 20px, 0);
+        background-color: $veryPaleBlue;
+        border-radius: 0 0 20px 20px;
+
+        .text {
+            @include setWrapper(100%, 0 auto, 30px 40px);
+            text-align: center;
+
+            .title {
+                margin-bottom: 20px;
+                @include setFont(1.5rem, 900, 1);
+                color: $darkBlue;
+            }
+
+            .subtitle {
+                @include setFont(1rem, 500, 1.5);
+                color: $desaturatedBlue;
+            }
+        }
+
+        .plan {
+            @include flex(flex, row, space-around, center, nowrap);
+            @include setWrapper(100%, 0 auto, 20px 40px);
+
+            .annual {
+                @include flex(flex, column, space-between, center, nowrap);
+                row-gap: 6px;
+                h3 {
+                    @include setFont(1rem, 700, 1);
+                    color: $darkBlue;
+                }
+
+                p {
+                    @include setFont(1rem, 500, 1);
+                    color: $desaturatedBlue;
+                }
+            }
+
+            .change {
+                @include setFont(1rem, 700, 1);
+
+                .change-link {
+                    color: $blue;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: rgb(161, 125, 232);
+                        text-decoration: none;
+                    }
+
+                    &:active {
+                        color: rgb(161, 125, 232);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .payment {
+            @include setWrapper(100%, 0 auto, 30px 25px);
+            @include flex(flex, column, space-between, center, nowrap);
+            row-gap: 20px;
+            text-align: center;
+
+            .btn--primary {
+                display: block;
+                @include setWrapper(100%, 0 auto, 15px 0);
+                @include setFont(1rem, 700, 1);
+                background-color: $blue;
+                color: $veryPaleBlue;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: rgb(161, 125, 232);
+                    text-decoration: none;
+                }
+
+                &:active {
+                    background-color: rgb(161, 125, 232);
+                    text-decoration: none;
+                }
+            }
+
+            .btn--additional {
+                display: block;
+                @include setWrapper(auto, 0 auto, 8px);
+                @include setFont(1rem, 700, 1);
+                color: $desaturatedBlue;
+                text-decoration: none;
+
+                &:hover {
+                    color: $darkBlue;
+                }
+
+                &:active {
+                    color: $darkBlue;
+                }
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 5px 20px;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
